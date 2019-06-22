@@ -122,12 +122,12 @@ ack_packet* recv_ack(int sockfd){
 
 void reliablyTransfer(char* hostname, unsigned short int hostUDPport, char* filename, uint bytesToTransfer) {
    
-   //for large file, big min windows
-    if(bytesToTransfer > 50485760 && bytesToTransfer < 100485760) {
-        MINIMUM_THRES = 1900;
-        MAX_WINDOW_SIZE = 4096;
-        debug_print("large, adjust minimum thres");
-    }
+//    //for large file, big min windows
+//     if(bytesToTransfer > 50485760 && bytesToTransfer < 100485760) {
+//         MINIMUM_THRES = 1900;
+//         MAX_WINDOW_SIZE = 4096;
+//         debug_print("large, adjust minimum thres");
+//     }
    // open the file that is going to be sent
     FILE *fp;
     fp = fopen(filename, "rb");
