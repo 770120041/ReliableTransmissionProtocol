@@ -24,7 +24,6 @@ chance to get dropped (remove “loss 5%” part if you want to test your progra
 that it’s also possible to specify the chance of reordering by adding “reorder 25%” after the packet loss rate
 argument.
 
-
 ## Usages
 ```./reliable_sender <rcv_hostname> <rcv_port> <file_path_to_read> <bytes_to_send>
 ./reliable_receiver <rcv_port> <file_path_to_write>
